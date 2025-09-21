@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <!-- Basic Layout -->
+    <div class="row">
+        <div class="col-xl">
+            <div class="card mb-6">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Basic with Icons</h5>
+                    <small class="text-muted float-end">Add Boom Details</small>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="Book" asp-action="AddBookDetails" method="post">
+                        <div class="row">
+                            <div class="mb-3">
+                                <label for="Title" class="form-label">Title</label>
+                                <input type="text" required class="form-control" id="Title" name="Title">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Author" class="form-label">Author</label>
+                                <input type="text" required class="form-control" id="Author" name="Author">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ISBN" class="form-label">ISBN</label>
+                                <input type="text" required class="form-control" id="ISBN" name="ISBN">
+                            </div>
+                            <div class="mb-3">
+                                <label for="PublishedDate" class="form-label">Published Date</label>
+                                <input type="date" required class="form-control" id="PublishedDate" name="PublishedDate">
+                            </div>
+                            <div class="mb-3">
+                                <label for="PageCount" class="form-label">Page Count</label>
+                                <input type="number" required class="form-control" id="PageCount" name="PageCount">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Description" class="form-label">Description</label>
+                                <textarea class="form-control" id="Description" name="Description" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <input type="submit" class="btn btn-primary" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
